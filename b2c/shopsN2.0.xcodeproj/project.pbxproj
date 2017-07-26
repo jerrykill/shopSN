@@ -141,6 +141,7 @@
 		88254FE31DFFFD10006245C1 /* YSPTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 88254FE21DFFFD10006245C1 /* YSPTButton.m */; };
 		882585671F0A427500990E47 /* YSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882585661F0A427500990E47 /* YSHomeViewController.m */; };
 		8825856B1F0A48A500990E47 /* YSTimeSetctionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8825856A1F0A48A500990E47 /* YSTimeSetctionHeadView.m */; };
+		88261A271F28566200D3CAD6 /* JKNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88261A261F28566200D3CAD6 /* JKNetManager.m */; };
 		8826665F1F14825300E09457 /* YSSearchKeyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8826665E1F14825300E09457 /* YSSearchKeyModel.m */; };
 		882791BB1E0B688800FB96D8 /* YSureOrderCouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882791BA1E0B688800FB96D8 /* YSureOrderCouponViewController.m */; };
 		882791BF1E0B6B4100FB96D8 /* YCuponViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 882791BE1E0B6B4100FB96D8 /* YCuponViewCell.m */; };
@@ -1045,6 +1046,8 @@
 		882585661F0A427500990E47 /* YSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSHomeViewController.m; sourceTree = "<group>"; };
 		882585691F0A48A500990E47 /* YSTimeSetctionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSTimeSetctionHeadView.h; sourceTree = "<group>"; };
 		8825856A1F0A48A500990E47 /* YSTimeSetctionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSTimeSetctionHeadView.m; sourceTree = "<group>"; };
+		88261A251F28566200D3CAD6 /* JKNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKNetManager.h; sourceTree = "<group>"; };
+		88261A261F28566200D3CAD6 /* JKNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKNetManager.m; sourceTree = "<group>"; };
 		8826665D1F14825300E09457 /* YSSearchKeyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSSearchKeyModel.h; sourceTree = "<group>"; };
 		8826665E1F14825300E09457 /* YSSearchKeyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSSearchKeyModel.m; sourceTree = "<group>"; };
 		882791B91E0B688800FB96D8 /* YSureOrderCouponViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSureOrderCouponViewController.h; sourceTree = "<group>"; };
@@ -4423,6 +4426,8 @@
 		884A68431DE3DF8D00F2561A /* 请求相关(HttpRequest) */ = {
 			isa = PBXGroup;
 			children = (
+				88261A251F28566200D3CAD6 /* JKNetManager.h */,
+				88261A261F28566200D3CAD6 /* JKNetManager.m */,
 				8871906A1E4D9419003DC063 /* JKHttpRequestService.h */,
 				8871906B1E4D9419003DC063 /* JKHttpRequestService.m */,
 				88239A9E1E5FD81C0064FFC7 /* YGoodCollectAndCartService.h */,
@@ -6317,6 +6322,7 @@
 				883695871E2F18E40044748D /* EaseBubbleView+Text.m in Sources */,
 				882FD6991E055604002A7B9E /* YPersonActionCell.m in Sources */,
 				885DCD8D1DEEC92000BC0D5C /* YPrintBOXScrollView.m in Sources */,
+				88261A271F28566200D3CAD6 /* JKNetManager.m in Sources */,
 				8823245C1DF53B89000F346D /* YAddressModel.m in Sources */,
 				88254FD11DFFE43E006245C1 /* YGoodDetailHeadView.m in Sources */,
 				8836956A1E2F18E40044748D /* EaseMessageModel.m in Sources */,

@@ -20,6 +20,7 @@
 #import "YSFirstADSctionHeadView.h"
 #import "YGoodLikeCell.h"
 #import "YSgiftGoodCell.h"
+#import "JKNetManager.h"
 
 #import "YGuideViewController.h"//欢迎页
 #import "YScanViewController.h"//扫一扫
@@ -148,7 +149,16 @@
         YGuideViewController *vc = [[YGuideViewController alloc]init];
         [self presentViewController:vc animated:NO completion:nil];
     }
-
+    [JKNetManager jk_hasNetWork:^(bool has) {
+        if (has) {
+            //有网
+            if (!_announceArr.count) {
+                [self getData];
+            }
+        }else{
+            [SXLoadingView showAlertHUD:@"请开启网络权限" duration:SXLoadingTime];
+        }
+    }];
 }
 
 
@@ -159,7 +169,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_SERIAL, 0), ^{
+     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
          [self getData];
          dispatch_async(dispatch_get_main_queue(), ^{
              [self initView];
