@@ -1,0 +1,77 @@
+//
+//  PrefixHeader.pch
+//  shopsN
+//
+//  Created by imac on 2016/11/22.
+//  Copyright © 2016年 联系QQ:1084356436. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Custom.h"
+#import "UdStorage.h"
+#import "GradientLablel.h"
+//聊天
+//#import"EaseMob.h"
+//#import <EaseMobSDK/EaseMob.h>
+#import <EaseMobSDKFull/EaseMob.h>
+#import "EaseUI.h"
+#import "ChatDemoUIDefine.h"
+#import "EMAlertView.h"
+#import "TTGlobalUICommon.h"
+#import "UIViewController+DismissKeyboard.h"
+#import "NSString+Valid.h"
+//基类
+#import "YSTabbarViewController.h"
+#import "BaseNavigationController.h"
+#import "BaseScrollView.h"
+#import "BaseView.h"
+#import "BaseTableView.h"
+#import "BaseTableViewCell.h"
+#import "YNavigationController.h"
+#import "YPopView.h"//气泡
+#import "YGetAttribute.h"
+#import "YSystemNewsViewController.h"//系统消息
+#import "YSLoginViewController.h"//登录
+#import "YGoodFilterViewController.h"//商品筛选列表
+#import "YPlistAddressTool.h"
+
+
+//第三方
+#import "MJRefresh.h"
+#import <AFNetworking.h>
+#import "UIImageView+EMWebCache.h"
+//自定义
+#import "JKHttpRequestService.h"
+#import "YGoodCollectAndCartService.h"
+#import "SXLoadingView.h"
+#import "YShareTool.h"
+#import "YSParseTool.h"
+#import "JKPayTool.h"
+
+#import "YGoodShopModel.h"
+
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKConnector/ShareSDKConnector.h>
+
+//腾讯开放平台（对应QQ和QQ空间）SDK头文件
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+
+//微信SDK头文件
+#import "WXApi.h"
+
+//新浪微博SDK头文件
+#import "WeiboSDK.h"
+
+#import <AlipaySDK/AlipaySDK.h>
+#import "ZAlipayOrder.h"
+#import "UPPaymentControl.h"
+//极光推送
+#import <JPush/JPUSHService.h>
+#import "YJkPushTool.h"
+
+//键盘
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#endif /* PrefixHeader_pch */

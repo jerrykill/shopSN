@@ -1,0 +1,9 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/EaseMobSDKFull" "${PODS_ROOT}/Headers/Public/IQKeyboardManager" "${PODS_ROOT}/Headers/Public/JCore" "${PODS_ROOT}/Headers/Public/JPush"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManager" $(inherited) "${PODS_ROOT}/EaseMobSDKFull/EaseMobSDKFull/lib" $(inherited) "${PODS_ROOT}/JCore" $(inherited) "${PODS_ROOT}/JPush"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/EaseMobSDKFull" -isystem "${PODS_ROOT}/Headers/Public/IQKeyboardManager" -isystem "${PODS_ROOT}/Headers/Public/JCore" -isystem "${PODS_ROOT}/Headers/Public/JPush"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"EaseMobClientSDK_arm64" -l"EaseMobClientSDK_armv7" -l"EaseMobClientSDK_armv7s" -l"EaseMobClientSDK_i386" -l"EaseMobClientSDK_x86_64" -l"IQKeyboardManager" -l"iconv" -l"jcore-ios-1.1.5" -l"jpush-ios-3.0.6" -l"resolv" -l"sqlite3" -l"stdc++" -l"stdc++.6" -l"stdc++.6.0.9" -l"xml2" -l"z" -framework "AVFoundation" -framework "CFNetwork" -framework "CoreData" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMedia" -framework "CoreTelephony" -framework "Foundation" -framework "MediaPlayer" -framework "MobileCoreServices" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "UserNotifications"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
