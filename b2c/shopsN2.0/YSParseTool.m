@@ -244,7 +244,7 @@
     NSMutableArray *list = [NSMutableArray array];
     for (NSDictionary *dic in data) {
         YGoodsModel *model = [[YGoodsModel alloc]init];
-        model.goodId = dic[@"goods_id"];
+        model.goodId = dic[@"id"];
         model.goodTitle = dic[@"title"];
         model.goodMoney = dic[@"price_member"];
         model.goodUrl = dic[@"img"];
