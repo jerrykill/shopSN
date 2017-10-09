@@ -368,15 +368,15 @@
     if (model.imageArr.count) {
         model.goodUrl = model.imageArr[0];
     }
-    NSMutableArray *house = [NSMutableArray array];
-    NSArray *locations = data[@"warehouse"];
-    for (NSDictionary*dic in locations) {
-        YSGoodLocationModel *local = [[YSGoodLocationModel alloc]init];
-        local.name = dic[@"name"];
-        local.locationId = dic[@"id"];
-        [house addObject:local];
-    }
-    model.location = house;
+//     NSMutableArray *house = [NSMutableArray array];
+//     NSArray *locations = data[@"warehouse"];
+//     for (NSDictionary*dic in locations) {
+//         YSGoodLocationModel *local = [[YSGoodLocationModel alloc]init];
+//         local.name = dic[@"name"];
+//         local.locationId = dic[@"id"];
+//         [house addObject:local];
+//     }
+//     model.location = house;
     NSMutableArray *types = [NSMutableArray array];
     for (NSDictionary *dic in data[@"allattrcha"]) {
         YGoodSizeModel *size = [[YGoodSizeModel alloc]init];
